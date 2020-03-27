@@ -1,0 +1,58 @@
+package exe5;
+
+public class exeAnimal {
+	int QuanP;
+	  String especie;
+	  double Peso;
+
+
+	   public exeAnimal(int QuantP,String especie,double peso) {
+	       this.QuanP = QuantP;
+	       this.especie = especie;
+	       this.Peso = peso;
+	   }
+
+	   public int getQuantP() {
+	       return QuanP;
+	   }
+
+	   public void setQuantP(int QuantP) {
+	       this.QuanP = QuantP;
+	   }
+
+	   public String getespecie() {
+	       return especie;
+	   }
+
+	   public void setespecie(String especie) {
+	       this.especie = especie;
+	   }
+
+	   public double getPeso() {
+	       return Peso;
+	   }
+
+	   public void setPeso(double Peso) {
+	      this.Peso = Peso; 
+	   }
+
+
+	   public void imprimirDados() {
+	       System.out.println("Quantidade de patas: "+ this.getQuantP());
+	       System.out.println("Especie: "+ this.getespecie());
+	       System.out.println("Peso: "+ this.getPeso() +" Kg");
+	   }
+	}
+==================================================================================================================
+package exe5;
+
+import java.util.Scanner;
+public class principal {
+
+	public static void main(String[] args) {
+        // TODO Auto-generated method stub
+    exeAnimal a = new exeAnimal(4, "chowchow", 40);
+    a.imprimirDados();
+    }
+
+}
